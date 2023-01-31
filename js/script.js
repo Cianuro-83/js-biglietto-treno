@@ -6,6 +6,7 @@ const prezzoAlKm = 0.21;
 // Inserisco data richiesta acquisto biglietto
 const today = new Date();
 console.log("Data:", today);
+
 // chiedo nome all'utente
 let name = prompt("Inserisci il tuo Nome");
 console.log("Nome:", name);
@@ -14,7 +15,7 @@ console.log("Nome:", name);
 let surname = prompt("Inserisci il tuo Cognome");
 console.log("Cognome:", surname);
 
-// chiedo l'anno di nascita all'utente
+// chiedo l'età all'utente
 let birdht = parseInt(prompt("Inserisci la tua età"));
 console.log("Anni:", birdht);
 
@@ -42,7 +43,7 @@ console.log(
   travelOlder.toFixed(2)
 );
 
-// emetto biglitto in base all'età
+// calcolo costo del biglietto in base all'età
 if (birdht < 18) {
   console.log(
     "Hai diritto allo sconto del 20% risersato agli under 18, il costo finale del tuo biglietto è di €",
@@ -56,3 +57,30 @@ if (birdht < 18) {
 } else {
   console.log("Il prezzo del tuo biglietto è di €", travelFull.toFixed(2));
 }
+// stampo i valori in HTML
+// const alKm = document.getElementById("");
+// alKm.innerHTML = prezzoAlKm;
+
+// const data = document.getElementById("");
+// data.innnerHTML = today;
+
+// let firstName = document.getElementById("");
+// firstName.innerHTML = name;
+
+// let lastName = document.getElementById("");
+// lastName.innerHTML = surname;
+
+// let age = document.getElementById("");
+// age.innerHTML = birdht;
+
+// let kmTravel = document.getElementById("");
+// kmTravel.innerHTML = travel;
+
+let ticketFull = document.getElementById("biglietto");
+ticketFull.innerHTML = travelFull.toFixed(2);
+
+let ticketYoung = document.getElementById("biglietto-under18");
+ticketYoung.innerHTML = travelYoung.toFixed(2);
+
+let ticketOlder = document.getElementById("biglietto-over65");
+ticketOlder.innerHTML = travelOlder.toFixed(2);
