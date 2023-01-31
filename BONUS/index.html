@@ -18,14 +18,81 @@
 </head>
 
 <body>
-    <p>Il costo del biglietto a prezzo pieno per utenti tra 18 e 64 anni è di €</p>
-    <h2 id="biglietto"></h2>
-    <br>
-    <p>Il costo del biglietto con sconto del 20% per utenti under 18 è di €</p>
-    <h2 id="biglietto-under18"></h2>
-    <br>
-    <p>Il costo del biglietto con sconto del 40% per utenti over 65 è di €</p>
-    <h2 id="biglietto-over65"></h2>
+    <div class="container debug mt-5">
+        <div class="col-12 text-center scb">
+            <h1>
+                <i class="fa-solid fa-train"></i>
+                <span class="title">CIANURO'S RAYLWAYAS</span>
+
+                <i class="fa-solid fa-train"></i>
+            </h1>
+            <p class="mt-3">Per generare il tuo biglietto ferroviario clicca sul pulsante ed inserisci i dati richiesti
+            </p>
+        </div>
+        <div class="col-12 mt-5 mb-5 text-center">
+            <span class="text-uppercase fw-bolder fs-5 scb-button">
+                <a href="./index.html">clicca per generare la tua password</a>
+            </span>
+        </div>
+        <div class="row mb-3 py3 bg-info sbc-info">
+            <div class="col text-uppercase">
+                <span>- Il costo base del biglietto è di €</span> <span id="biglietto" class="fw-bolder"></span>
+            </div>
+            <div class="col-12 text-uppercase py-3">
+                <span>- Il prezzo del biglietto con lo sconto del 20% riservato agli under 18 è di €</span> <span
+                    id="biglietto-under18" class="fw-bolder"></span>
+            </div>
+            <div class="col-12 text-uppercase">
+                <span>- Il prezzo del biglietto con lo sconto del 40% riservato agli over 65 è di €</span> <span
+                    id="biglietto-over65" class="fw-bolder"></span>
+            </div>
+        </div>
+        <div class="col-12 text-bg-warning text-center">in base ai dati inseriti il sistema ha generato il seguente
+            biglietto
+        </div>
+        <div class="row py-3">
+            <div class="col-12 col-md-6 debug">
+                <p>
+                    <span class="text-uppercase">nome:</span> <span id="nome-utente"></span>
+                </p>
+            </div>
+            <div class="col-12 col-md-6 debug">
+                <p>
+                    <span class="text-uppercase">cognome:</span> <span id="cognome-utente"></span>
+                </p>
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="col-12 col-md-6 debug">
+                <p>
+                    <span class="text-uppercase">età:</span>
+                    <span id="eta-utente"></span>
+                    <span class="text-uppercase">anni</span>
+                </p>
+            </div>
+            <div class="col-12 col-md-6 debug">
+                <p>
+                    <span class="text-uppercase">lunghezza del viaggio:</span>
+                    <span id="tot-km"></span>
+                    <span class="text-uppercase"> km</span>
+                </p>
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="col-12 text-center debug">
+                <p>
+                    <span class="text-uppercase">Il costo del tuo viaggio è di:</span>
+                    <span id="mio-prezzo" class="scb-red"></span>
+                    <span class="text-uppercase"> €</span>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
 
 
     <!-- MY JAVA SCRIPT -->

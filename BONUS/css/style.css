@@ -2,7 +2,7 @@
 RESET RULES
 ************************** */
 * {
-  margin: 20px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -19,5 +19,48 @@ a {
 }
 
 /* **************************
+DEBUG
+************************** */
+/* .debug {
+  border: 2px solid greenyellow;
+} */
+/* **************************
+TITOLO
+************************** */
+.fa-train {
+  color: red;
+}
+.title {
+  color: blue;
+}
+
+/* **************************
+BOTTONE
+************************** */
+.scb-button {
+  line-height: 2em;
+  border: 2px solid greenyellow;
+  border-radius: 999px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.scb-button a {
+  font-weight: 900;
+  font-size: 15px;
+  color: greenyellow;
+}
+.scb-button:hover {
+  border: 2px solid blanchedalmond;
+  background-color: red;
+}
+/* **************************
 DESCRIPTION
 ************************** */
+.sbc-info {
+  color: black;
+}
+
+.scb-red {
+  color: red;
+  font-weight: 900;
+}

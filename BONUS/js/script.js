@@ -1,7 +1,10 @@
-console.log("TEST");
+console.log("BONUS");
 
 // creo variabile con il prezzo del biglietto al km
 const prezzoAlKm = 0.21;
+
+// creo variabile prezzo finale
+let finalTicket;
 
 // Inserisco data richiesta acquisto biglietto
 const today = new Date();
@@ -45,36 +48,39 @@ console.log(
 
 // calcolo costo del biglietto in base all'età
 if (birdht < 18) {
+  finalTicket = travelYoung.toFixed(2);
   console.log(
     "Hai diritto allo sconto del 20% risersato agli under 18, il costo finale del tuo biglietto è di €",
     travelYoung.toFixed(2)
   );
 } else if (birdht >= 65) {
+  finalTicket = travelOlder.toFixed(2);
   console.log(
     "Hai diritto allo sconto del 40% risersato aggli over 65, il costo finale del tuo biglietto è di €",
     travelOlder.toFixed(2)
   );
 } else {
+  finalTicket = travelFull.toFixed(2);
   console.log("Il prezzo del tuo biglietto è di €", travelFull.toFixed(2));
 }
 // stampo i valori in HTML
-// const alKm = document.getElementById("");
+// const alKm = document.getElementById("prezzo");
 // alKm.innerHTML = prezzoAlKm;
 
-// const data = document.getElementById("");
-// data.innnerHTML = today;
+// const date = document.getElementById("acquisto");
+// date.innnerHTML = today;
 
-// let firstName = document.getElementById("");
-// firstName.innerHTML = name;
+let firstName = document.getElementById("nome-utente");
+firstName.innerHTML = name;
 
-// let lastName = document.getElementById("");
-// lastName.innerHTML = surname;
+let lastName = document.getElementById("cognome-utente");
+lastName.innerHTML = surname;
 
-// let age = document.getElementById("");
-// age.innerHTML = birdht;
+let age = document.getElementById("eta-utente");
+age.innerHTML = birdht;
 
-// let kmTravel = document.getElementById("");
-// kmTravel.innerHTML = travel;
+let kmTravel = document.getElementById("tot-km");
+kmTravel.innerHTML = travel;
 
 let ticketFull = document.getElementById("biglietto");
 ticketFull.innerHTML = travelFull.toFixed(2);
@@ -84,3 +90,6 @@ ticketYoung.innerHTML = travelYoung.toFixed(2);
 
 let ticketOlder = document.getElementById("biglietto-over65");
 ticketOlder.innerHTML = travelOlder.toFixed(2);
+
+let finalPrice = document.getElementById("mio-prezzo");
+finalPrice.innerHTML = finalTicket;
