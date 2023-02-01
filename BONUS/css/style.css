@@ -64,3 +64,8 @@ DESCRIPTION
   color: red;
   font-weight: 900;
 }
+
+.scb-bye {
+  background-color: darkred;
+  color: white;
+}
